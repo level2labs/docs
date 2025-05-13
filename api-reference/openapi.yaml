@@ -1,0 +1,75 @@
+openapi: 3.0.0
+info:
+  title: AIDocMaker API
+  version: 1.0.0
+  description: API for generating presentations using AIDocMaker
+
+servers:
+  - url: https://api.aidocmaker.com
+    description: Production server
+
+paths:
+  /generate_presentation:
+    post:
+      summary: Generate a presentation
+      description: Generate a presentation based on a user prompt
+      operationId: generatePresentation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - prompt
+              properties:
+                prompt:
+                  type: string
+                  description: The text prompt describing the presentation you want to generate. This should include details about the content, style, and any specific requirements for the presentation.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  access_link:
+                    type: string
+                    description: A URL where the generated presentation can be downloaded. This URL is temporary and should be used promptly.
+        '400':
+          description: Bad Request - Invalid or missing parameters
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        '401':
+          description: Unauthorized - Invalid or missing authentication
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        '429':
+          description: Too Many Requests - Rate limit exceeded
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string 

@@ -1,0 +1,23 @@
+---
+title: 'Generate Presentation'
+openapi: "POST /generate_presentation"
+---
+
+Generate a presentation by providing a text prompt. The API will return a download URL for your generated presentation.
+
+## Example
+
+```bash
+curl -X POST https://api.aidocmaker.com/generate_presentation \
+  -H "Content-Type: application/json" \
+  -d '{
+    "prompt": "Create a presentation about the benefits of artificial intelligence in healthcare, including 5 slides with statistics and examples"
+  }'
+```
+
+## Support
+
+If you need help, contact our support team:
+
+- Email: support@aidocmaker.com
+- Help Center: [https://intercom.help/aidocmaker/en/](https://intercom.help/aidocmaker/en/)
