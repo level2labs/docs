@@ -8,8 +8,30 @@
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
+  "seo": {
+    "metatags": {
+      "robots": "noindex"
+    }
+  },
   "navigation": {
     "tabs": [
+      {
+        "tab": "Getting Started with Aidocmaker.com",
+        "groups": [
+          {
+            "group": "Quick Start Guide",
+            "pages": [
+              "getting-started/quick-start/generating_document",
+              "getting-started/quick-start/generating_presentation",
+              "getting-started/quick-start/generating_spreadsheet"
+            ]
+          },
+          {
+            "group": "API Platform",
+            "pages": []
+          }
+        ]
+      },
       {
         "tab": "API Reference",
         "groups": [
