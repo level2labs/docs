@@ -25,7 +25,8 @@ paths:
               properties:
                 prompt:
                   type: string
-                  description: The text prompt describing the presentation you want to generate. This should include details about the content, style, and any specific requirements for the presentation.
+                  description: Prompt for the presentation
+                  example: Create a presentation about the benefits of AI in healthcare, with 5 slides and statistics
       responses:
         '200':
           description: Successful response
@@ -72,4 +73,4 @@ paths:
                 type: object
                 properties:
                   error:
-                    type: string 
+                    type: string
