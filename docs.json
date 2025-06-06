@@ -23,12 +23,9 @@
             "pages": [
               "getting-started/quick-start/generating_document",
               "getting-started/quick-start/generating_presentation",
-              "getting-started/quick-start/generating_spreadsheet"
+              "getting-started/quick-start/generating_spreadsheet",
+              "getting-started/guides/choose_model"
             ]
-          },
-          {
-            "group": "API Platform",
-            "pages": []
           }
         ]
       },
@@ -44,7 +41,8 @@
           {
             "group": "Endpoint Examples",
             "pages": [
-              "api-reference/endpoint/generate_presentation"
+              "api-reference/endpoint/generate_presentation",
+              "api-reference/endpoint/generate_spreadsheet"
             ]
           }
         ]

@@ -74,3 +74,72 @@ paths:
                 properties:
                   error:
                     type: string
+  /generate_spreadsheet:
+    post:
+      summary: Generate a spreadsheet using AI
+      description: Generate a spreadsheet based on a user prompt, with optional CSV data
+      operationId: generateSpreadsheet
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - prompt
+              properties:
+                prompt:
+                  type: string
+                  description: Instructions that will be used by an AI agent to create the spreadsheet. The instructions should be detailed and contain important information.
+                  example: Generate a monthly time tracking spreadsheet for 2025 that includes columns for date, project name, task description, hours worked, billable status, and notes. Include formulas to calculate total hours per project and per month.
+                csv_data:
+                  type: string
+                  description: Optional CSV data to use during spreadsheet generation. The data should be in CSV format.
+                  default: ""
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  access_link:
+                    type: string
+                    description: A URL where the generated spreadsheet can be downloaded. This URL is temporary and should be used promptly.
+        '400':
+          description: Bad Request - Invalid or missing parameters
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        '401':
+          description: Unauthorized - Invalid or missing authentication
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        '429':
+          description: Too Many Requests - Rate limit exceeded
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
