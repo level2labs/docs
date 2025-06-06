@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "AI Doc Maker",
+  "name": "Aidocmaker.com",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -19,18 +19,28 @@
         "tab": "Getting Started",
         "groups": [
           {
-            "group": "Quick Start",
+            "group": "Tutorials",
             "pages": [
               "getting-started/quick-start/generating_document",
               "getting-started/quick-start/generating_presentation",
-              "getting-started/quick-start/generating_spreadsheet",
+              "getting-started/quick-start/generating_spreadsheet"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Tips & Tricks",
+        "groups": [
+          {
+            "group": "Models",
+            "pages": [
               "getting-started/guides/choose_model"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "API Guide",
         "groups": [
           {
             "group": "API Documentation",
