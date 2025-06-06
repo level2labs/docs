@@ -19,7 +19,7 @@
         "tab": "Getting Started",
         "groups": [
           {
-            "group": "Tutorials",
+            "group": "Quickstart",
             "pages": [
               "getting-started/quick-start/generating_document",
               "getting-started/quick-start/generating_presentation",
