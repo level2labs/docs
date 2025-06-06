@@ -1,0 +1,25 @@
+---
+title: 'Generate Spreadsheet'
+openapi: "POST /generate_spreadsheet"
+---
+
+Generate a spreadsheet using Aidocmaker by providing a prompt and optional CSV data.
+
+## Example
+
+```bash
+curl -X POST https://api.aidocmaker.com/generate_spreadsheet \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -d '{
+    "prompt": "Generate a monthly time tracking spreadsheet for 2025 that includes columns for date, project name, task description, hours worked, billable status, and notes. Include formulas to calculate total hours per project and per month.",
+    "csv_data": ""
+  }'
+```
+
+## Support
+
+If you need help, contact our support team:
+
+- Email: support@aidocmaker.com
+- Help Center: [https://intercom.help/aidocmaker/en/](https://intercom.help/aidocmaker/en/)
