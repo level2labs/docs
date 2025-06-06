@@ -16,10 +16,10 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Getting Started with Aidocmaker.com",
+        "tab": "Getting Started",
         "groups": [
           {
-            "group": "Quick Start Guide",
+            "group": "Quick Start",
             "pages": [
               "getting-started/quick-start/generating_document",
               "getting-started/quick-start/generating_presentation",
