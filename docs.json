@@ -25,17 +25,10 @@
               "getting-started/quick-start/generating_presentation",
               "getting-started/quick-start/generating_spreadsheet"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Tips & Tricks",
-        "groups": [
+          },
           {
-            "group": "Models",
-            "pages": [
-              "getting-started/guides/choose_model"
-            ]
+            "group": "Guides",
+            "pages": ["getting-started/guides/choose_model"]
           }
         ]
       },
@@ -44,9 +37,7 @@
         "groups": [
           {
             "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "pages": ["api-reference/introduction"]
           },
           {
             "group": "Endpoint Examples",
