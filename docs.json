@@ -21,9 +21,11 @@
           {
             "group": "Quickstart",
             "pages": [
+              "getting-started/quick-start/introduction",
               "getting-started/quick-start/generating_document",
               "getting-started/quick-start/generating_presentation",
-              "getting-started/quick-start/generating_spreadsheet"
+              "getting-started/quick-start/generating_spreadsheet",
+              "getting-started/quick-start/chat_with_ai"
             ]
           },
           {
