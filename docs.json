@@ -25,12 +25,22 @@
               "getting-started/quick-start/generating_document",
               "getting-started/quick-start/generating_presentation",
               "getting-started/quick-start/generating_spreadsheet",
-              "getting-started/quick-start/chat_with_ai"
+              "getting-started/quick-start/chat_with_ai",
+              "getting-started/quick-start/why_aidocmaker"
             ]
           },
           {
             "group": "Guides",
-            "pages": ["getting-started/guides/choose_model"]
+            "pages": [
+              "getting-started/guides/choose_model"
+            ]
+          },
+          {
+            "group": "Examples",
+            "pages": [
+              "getting-started/examples/create_data_analysis_report",
+              "getting-started/examples/extract_transactions"
+            ]
           }
         ]
       },
@@ -39,7 +49,9 @@
         "groups": [
           {
             "group": "API Documentation",
-            "pages": ["api-reference/introduction"]
+            "pages": [
+              "api-reference/introduction"
+            ]
           },
           {
             "group": "Endpoint Examples",
