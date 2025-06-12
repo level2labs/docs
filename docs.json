@@ -31,33 +31,13 @@
           },
           {
             "group": "Guides",
-            "pages": [
-              "getting-started/guides/choose_model"
-            ]
+            "pages": ["getting-started/guides/choose_model"]
           },
           {
             "group": "Examples",
             "pages": [
               "getting-started/examples/create_data_analysis_report",
               "getting-started/examples/extract_transactions"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Guide",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/generate_presentation",
-              "api-reference/endpoint/generate_spreadsheet"
             ]
           }
         ]
