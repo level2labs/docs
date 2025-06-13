@@ -31,7 +31,10 @@
           },
           {
             "group": "Guides",
-            "pages": ["getting-started/guides/choose_model"]
+            "pages": [
+              "getting-started/guides/choose_model",
+              "getting-started/guides/premium_credits_usage"
+            ]
           },
           {
             "group": "Examples",
